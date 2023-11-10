@@ -15,6 +15,8 @@
 		D32C3F1A2AFD204600B9E7AF /* SettingsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32C3F192AFD204600B9E7AF /* SettingsAppUITests.swift */; };
 		D32C3F1C2AFD204600B9E7AF /* SettingsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32C3F1B2AFD204600B9E7AF /* SettingsAppUITestsLaunchTests.swift */; };
 		D32C3F292AFD2F0200B9E7AF /* SettingsExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32C3F282AFD2F0100B9E7AF /* SettingsExampleView.swift */; };
+		D32C3F2E2AFD347100B9E7AF /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32C3F2D2AFD347100B9E7AF /* General.swift */; };
+		D32C3F302AFD39E200B9E7AF /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32C3F2F2AFD39E200B9E7AF /* About.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		D32C3F192AFD204600B9E7AF /* SettingsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAppUITests.swift; sourceTree = "<group>"; };
 		D32C3F1B2AFD204600B9E7AF /* SettingsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D32C3F282AFD2F0100B9E7AF /* SettingsExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsExampleView.swift; sourceTree = "<group>"; };
+		D32C3F2D2AFD347100B9E7AF /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		D32C3F2F2AFD39E200B9E7AF /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +100,11 @@
 		D32C3EFD2AFD204300B9E7AF /* SettingsApp */ = {
 			isa = PBXGroup;
 			children = (
+				D32C3F2A2AFD343200B9E7AF /* SettingsPages */,
 				D32C3EFE2AFD204300B9E7AF /* SettingsAppApp.swift */,
 				D32C3F002AFD204300B9E7AF /* SettingsMenu.swift */,
-				D32C3F022AFD204500B9E7AF /* Assets.xcassets */,
 				D32C3F282AFD2F0100B9E7AF /* SettingsExampleView.swift */,
+				D32C3F022AFD204500B9E7AF /* Assets.xcassets */,
 				D32C3F042AFD204500B9E7AF /* Preview Content */,
 			);
 			path = SettingsApp;
@@ -128,6 +133,31 @@
 				D32C3F1B2AFD204600B9E7AF /* SettingsAppUITestsLaunchTests.swift */,
 			);
 			path = SettingsAppUITests;
+			sourceTree = "<group>";
+		};
+		D32C3F2A2AFD343200B9E7AF /* SettingsPages */ = {
+			isa = PBXGroup;
+			children = (
+				D32C3F2B2AFD345500B9E7AF /* General */,
+			);
+			path = SettingsPages;
+			sourceTree = "<group>";
+		};
+		D32C3F2B2AFD345500B9E7AF /* General */ = {
+			isa = PBXGroup;
+			children = (
+				D32C3F2D2AFD347100B9E7AF /* General.swift */,
+				D32C3F2C2AFD345C00B9E7AF /* About */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		D32C3F2C2AFD345C00B9E7AF /* About */ = {
+			isa = PBXGroup;
+			children = (
+				D32C3F2F2AFD39E200B9E7AF /* About.swift */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32C3F302AFD39E200B9E7AF /* About.swift in Sources */,
 				D32C3F012AFD204300B9E7AF /* SettingsMenu.swift in Sources */,
 				D32C3F292AFD2F0200B9E7AF /* SettingsExampleView.swift in Sources */,
+				D32C3F2E2AFD347100B9E7AF /* General.swift in Sources */,
 				D32C3EFF2AFD204300B9E7AF /* SettingsAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
